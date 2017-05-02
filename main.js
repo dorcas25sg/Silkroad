@@ -25,7 +25,7 @@ var map = L.mapbox.map('map').setView([35.8617, 104.19], 4);
                     'marker-size': 'small',
                     'marker-symbol': 'museum'
                 })
-             }).addTo(map);
+             }).addTo(map).bindTooltip(layer.feature.properties.namegeo);
       }});
   });
 
