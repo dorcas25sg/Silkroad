@@ -4,7 +4,7 @@ var featureGroup;
 var featureGroup2;
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiZG9yY2FzMjVzZyIsImEiOiJjajA0Ymt0MDYwYnBmMnFvbDhrN3cwcmdxIn0.cO9udcmKN-u47CKHednVgQ';
-var map = L.mapbox.map('map', 'mapbox.streets').setView([35.8617, 104.19], 4);
+var map = L.mapbox.map('map').setView([35.8617, 104.19], 4);
 
 
   $(document).ready(function() {
@@ -28,5 +28,11 @@ var map = L.mapbox.map('map', 'mapbox.streets').setView([35.8617, 104.19], 4);
              }).addTo(map);
       }});
   });
+
+  L.control.layers({
+    'Dark': L.mapbox.tileLayer('mapbox.dark').addTo(map),
+    'Streets': L.mapbox.tileLayer('mapbox.streets'),
+    'Light': L.mapbox.tileLayer('mapbox.light')
+  }).addTo(map);
 
 });
