@@ -26,3 +26,21 @@ p.main {
     padding: 10px;
     font-size: 16px;
 }
+
+.popup {
+  text-align:center;
+  }
+.popup .slideshow .image        { display:block; }
+.popup .slideshow .image.active { display:block; }
+.popup .slideshow img {
+  width:100%;
+  }
+.popup .slideshow .caption {
+  background:#eee;
+  padding:10px;
+  }
+.popup .cycle {
+  padding:10px 0 20px;
+  }
+  .popup .cycle a.prev { float:left; }
+  .popup .cycle a.next { float:right; }

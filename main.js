@@ -3,6 +3,11 @@ var dataset2 = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/sil
 var featureGroup;
 var featureGroup2;
 
+var popupContent = function(a, b) {
+                      return '<div class="popup">' + '<h2>' + a +'</h2>'+ '<div class="slideshow">' + '<img src="' + b + '" />' + '</div>' +'</div>';
+                    };
+
+
 L.mapbox.accessToken = 'pk.eyJ1IjoiZG9yY2FzMjVzZyIsImEiOiJjajA0Ymt0MDYwYnBmMnFvbDhrN3cwcmdxIn0.cO9udcmKN-u47CKHednVgQ';
 var map = L.mapbox.map('map').setView([35.8617, 104.19], 4);
 
@@ -25,7 +30,8 @@ var map = L.mapbox.map('map').setView([35.8617, 104.19], 4);
                     'marker-size': 'small',
                     'marker-symbol': 'museum'
                 })
-             }).addTo(map).bindTooltip(layer.feature.properties.namegeo);
+             }).addTo(map).bindTooltip(popupContent(layer.feature.properties.namegeo, layer.feature.properties.urlname));
+
       }});
   });
 
