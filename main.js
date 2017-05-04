@@ -1,4 +1,4 @@
-var dataset = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/map.geojson";
+var dataset = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/mapNEW.geojson";
 var dataset2 = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/silkroadchinese2.geojson";
 var featureGroup;
 var featureGroup2;
