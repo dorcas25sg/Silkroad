@@ -40,6 +40,14 @@ p.main {
   right:auto;
 }
 
+.search-ui {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:1000;
+  }
+
+
 .popup {
   text-align:center;
   }

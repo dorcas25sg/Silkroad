@@ -44,17 +44,10 @@ var map = L.mapbox.map('map').setView([35.8617, 104.19], 4);
                     'marker-size': 'small',
                     'marker-symbol': 'museum'
                 })
-             }).addTo(map).bindTooltip(popupContent(layer.feature.properties.namegeo, layer.feature.properties.urlname));
-
-             //ISSUE HERE
-             layer.on('click', function (event) {
-               console.log("Hello!");
-                //Just for reference: to get the centriod of each polygoon: var centriod = layer.getBounds().getCenter();
-                var bounds = event.target.getBounds();
-                map.fitBounds(bounds, {padding: [50,50]});
-               console.log(layer.feature);
+             }).addTo(map).bindTooltip(popupContent(layer.feature.properties.namegeo, layer.feature.properties.urlname))
+             .on('click', function (event) {
+               map.setView(event.target._latlng, 7);
              });
-
 
       }});
   });
