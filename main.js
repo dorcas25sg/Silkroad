@@ -1,7 +1,8 @@
-var dataset = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/map.geojson";
+var dataset = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/mapNEW.geojson";
 var dataset2 = "https://raw.githubusercontent.com/dorcas25sg/Silkroad/master/silkroadchinese2.geojson";
 var featureGroup;
 var featureGroup2;
+
 var sk2 ="https://gist.githubusercontent.com/Ziqinwang/c682220d2bb52f12740a2dbe2edf0333/raw/05cee6a62c746d993383020972b5add87006485f/test1.geojson";
 var sk3 ="https://gist.githubusercontent.com/Ziqinwang/0822e76c94030905e18ec4c4a1486b2c/raw/72ce5f12ad736df145cc9c7a6b8a357981b9ab29/test2.geojson";
 var route11 = [];
@@ -13,6 +14,18 @@ var geojson2 = { type: 'LineString', coordinates: [] };
 
 
 
+var eachFeatureFunction = function(layer) {
+  layer.on('click', function (event) {
+     //Just for reference: to get the centriod of each polygoon: var centriod = layer.getBounds().getCenter();
+     var bounds = event.target.getBounds();
+     map.fitBounds(bounds, {padding: [50,50]});
+    console.log(layer.feature);
+  });
+};
+
+$( "#reset" ).click(function() {
+  map.setView([35.8617, 104.19], 4);
+});
 
 var popupContent = function(a, b) {
                       return '<div class="popup">' + '<h2>' + a +'</h2>'+ '<div class="slideshow">' + '<img src="' + b + '" />' + '</div>' +'</div>';
@@ -108,7 +121,10 @@ var map = L.mapbox.map('map').setView([35.8617, 104.19], 4);
                     'marker-size': 'small',
                     'marker-symbol': 'museum'
                 })
-             }).addTo(map).bindTooltip(popupContent(layer.feature.properties.namegeo, layer.feature.properties.urlname));
+             }).addTo(map).bindTooltip(popupContent(layer.feature.properties.namegeo, layer.feature.properties.urlname))
+             .on('click', function (event) {
+               map.setView(event.target._latlng, 7);
+             });
 
       }});
   });

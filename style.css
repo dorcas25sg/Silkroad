@@ -19,13 +19,34 @@ p.main {
 .sidebar {
     position: absolute;
     left: 0px;
-    width: 400px;
+    width: 377px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
+    color: white;
+    background-color: #151515;
 }
+
+#sourceC {
+  left:100px;
+  right:auto;
+}
+
+
+#reset {
+  left:110px;
+  right:auto;
+}
+
+.search-ui {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:1000;
+  }
+
 
 .popup {
   text-align:center;
