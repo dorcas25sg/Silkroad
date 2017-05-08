@@ -1,4 +1,4 @@
-# Silk Road Map
+.# Silk Road Map
 This is a submission for the final project of MUSA 620: Data Wrangling and Data Visualization (Instructor: Max Galka)
 
 By Dorcas Chang and Ziqin Wang
@@ -8,7 +8,8 @@ Using R, we scraped data from [Yale Silk Road Database](http://digitalcollection
 
 
 ## Geocoding
-We then batch geocoded the points online (https://www.doogal.co.uk/BatchGeocoding.php)
+We then batch geocoded the points online (https://www.doogal.co.uk/BatchGeocoding.php).
+
 Unfortunately, because of the nature of the language and perhaps the obsurity of the sites, there were some points that failed to be geocoded and were removed from our dataset
 
 ## Data Visualization
