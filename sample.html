@@ -5,8 +5,6 @@
 <title>Silk Road Map</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
-<script src="jquery-2.2.0.js"></script>
-<script src="underscore.js"></script>
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -20,24 +18,27 @@
         <p><b>A final project for MUSA 620: Data Wrangling and Data Visualization (Instructor: Max Galka)</b></p>
         <p>By <i>Dorcas Chang</i> & <i>Ziqin Wang</i></p>
         <br>
-        <p>The ancient silk road is one of the most important <b>trade routes</b> that links many ancient civilizations from the East to West. These trade routes carried <b>people, goods, knowledge, culture, and technology</b> that had left their marks on the history and development of the civilizations they served (UNESCO, n.d). Our project intends to create an interactive map of the ancient Silk Road to educate and communicate a visual representation of this indelible segment of world history. Due to the sheer scale of the Silk Road, our project will focus specifically on the <b>Chinese segment of the Silk Road</b> for now, which contains over half (2,485 miles/4,000 kilometers) of the entire length of 4,350 miles/7,000 kilometers (Travel China Guide, 2017).</p>
+        <p>The ancient silk road is one of the most important <b>trade routes</b> that links many ancient civilizations from the East to West, carrying <b>people, goods, knowledge, culture, and technology</b>. Due to the sheer scale of the Silk Road, our project will focus specifically on the <b>Chinese segment of the Silk Road</b> for now.</p>
+        <p>While the <b style="color:blue"> BLUE LINES</b> represent the conventional routes of the Silk Road, the Yale Silk Road Database has shown many more records branching out from these conventional routes (see the <b style="color:pink">PINK MARKERS</b>).</p>
+        <p>Explore the map, see what you can find!</p>
         <!-- Accent-colored raised button with ripple -->
         <br>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="reset">
           Reset Map
         </button> </a>
         <br> <br>
-        <a href="https://github.com/dorcas25sg/Silkroad" target="_blank"> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="sourceC">
-          Source Code
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="stop" ">
+          Restart Line Marker
         </button> </a>
       </div>
-      <button id="stop">Click me</button>
     </div>
 <div id='map'></div>
 
 
 </body>
 
+<script src="jquery-2.2.0.js"></script>
+<script src="underscore.js"></script>
 <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
 <script src='main.js'></script>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>

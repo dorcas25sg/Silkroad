@@ -170,9 +170,10 @@ $(document).ready(function() {
            {
              closeButton: false,
              minWidth: 320
-           }).on('click', function () {
+           }).on('click', function (event) {
              $('.slideshow').find('.active').removeClass('active').hide();
              $('#P0').addClass('active').show();
+             map.setView(event.target._latlng, 7);
 
            });
          }
