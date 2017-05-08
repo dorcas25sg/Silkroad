@@ -16,7 +16,9 @@ The geocoded records were then converted into [Geojson](http://geojson.io)
 
 ## Data Visualization 
 
-The data was then vizualized spatially using Javascript 
+The data was then vizualized spatially using Javascript. 
+
+The routes were taken from [ArcGIS Online](https://www.arcgis.com/home/item.html?id=6ee51d446e21407b97a3e3ea4b8aeae2). The raw data is a multi-line string shapefile had to be edited into separate line strings for each route. Since the points in the line were not in order of their lat/lon (but rather randomly in space), we had to comb for the first and last point along each route to create animated markers that moved from start to end. We managed to do that by manually drawing the lines using draw and convert graph to feature tools in ArcGIS and then export to geojson. 
 
 #### JS Libraries and tools used 
 - JQuery 
