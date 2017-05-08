@@ -26,5 +26,5 @@ You can...
 - See how the traditional perception the Silk road routes move
 - Stop the moving points
 - Observe the geographical location of sites/sights studied in the Yale Silk Road database (interestingly, these sites extend beyond the conventional perceptions of routes of the Silk road!)
-- Clicking on each point zooms to the map and launches a popup that is a slideshow of some of the artefacts/sights along the silk road
+- Clicking on each point launches a popup that is a slideshow of some of the artefacts/sights along the silk road
 - Reset the map to original view
