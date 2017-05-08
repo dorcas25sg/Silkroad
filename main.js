@@ -130,9 +130,11 @@ $(document).ready(function() {
 
    L.geoJson(geojson1).addTo(map);
    var marker = L.marker([0, 0], {
-         icon: L.mapbox.marker.icon({
-           'marker-color': '#f86767'
-         })
+     icon: L.mapbox.marker.icon({
+       'marker-color': 'FFCC00',
+       //'marker-size': 'small', // or 'large'
+       'marker-symbol': 'embassy'
+     })
    }).addTo(map);
    var j = 0;
    var Timeout1;
@@ -161,9 +163,11 @@ $(document).ready(function() {
 
     L.geoJson(geojson2).addTo(map);
     var marker = L.marker([0, 0], {
-          icon: L.mapbox.marker.icon({
-            'marker-color': '#f86767'
-          })
+      icon: L.mapbox.marker.icon({
+        'marker-color': 'FF9966',
+        //'marker-size': 'small', // or 'large'
+        'marker-symbol': 'embassy'
+      })
     }).addTo(map);
     var j = 0;
     tick();
@@ -194,9 +198,11 @@ $(document).ready(function() {
 
     L.geoJson(geojson3).addTo(map);
     var marker = L.marker([0, 0], {
-          icon: L.mapbox.marker.icon({
-            'marker-color': '#f86767'
-          })
+      icon: L.mapbox.marker.icon({
+        'marker-color': '7F1769',
+        //'marker-size': 'small', // or 'large'
+        'marker-symbol': 'embassy'
+      })
     }).addTo(map);
     var j = 0;
     tick();
@@ -226,9 +232,11 @@ $(document).ready(function() {
 
     L.geoJson(geojson4).addTo(map);
     var marker = L.marker([0, 0], {
-          icon: L.mapbox.marker.icon({
-            'marker-color': '#f86767'
-          })
+      icon: L.mapbox.marker.icon({
+        'marker-color': '21B6A8',
+        //'marker-size': 'small', // or 'large'
+        'marker-symbol': 'embassy'
+      })
     }).addTo(map);
     var j = 0;
     tick();
