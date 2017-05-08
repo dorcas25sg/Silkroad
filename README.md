@@ -1,4 +1,4 @@
-.# Silk Road Map
+# Map of The Silk Road
 This is a submission for the final project of MUSA 620: Data Wrangling and Data Visualization (Instructor: Max Galka)
 
 By Dorcas Chang and Ziqin Wang
