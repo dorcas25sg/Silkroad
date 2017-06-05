@@ -2,7 +2,7 @@
 This is a submission for the final project of MUSA 620: Data Wrangling and Data Visualization (Instructor: Max Galka)  
 By Dorcas Chang and Ziqin Wang
 
-#### [Live Site](https://dorcas25sg.github.io/Silkroad/)
+### [Live Site](https://dorcas25sg.github.io/Silkroad/)
 
 ## Web Scraping with R 
 Using R, we scraped data from [Yale Silk Road Database](http://digitalcollections.library.yale.edu/YaleSilkRoad/search.dl?q=Search+this+collection&qcx=1034.1&qqid=52950&qs=1), removed duplicates and cleaned data accordingly (e.g. errors in the database, missing information etc).
